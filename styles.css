@@ -217,35 +217,35 @@ section .content {
 }
 
 #event-1 {
-    background-image: url('/events/Baithak-event.png');
+    background-image: url('/events/BaithakEvent.png');
     background-color: white;
     color: #202124;
     border: 3px solid #F8AA00;
 }
 
 #event-2 {
-    background-image: url('/events/Nextjs+Supabase-event.png');
+    background-image: url('/events/NextjsSupabaseEvent.png');
     background-color: #212121;
     color: #f0f0f0;
     border: 2px solid #C30101;
 }
 
 #event-3 {
-    background-image: url('/events/HackfestxDatathon-event.png');
+    background-image: url('/events/HackfestxDatathonEvent.png');
     background-color: white;
     color: #202124;
     border: 2px solid #2B3097;
 }
 
 #event-4 {
-    background-image: url('/events/BuildwithAI-event.png');
+    background-image: url('/events/BuildwithAIEvent.png');
     background-color: white;
     color: #202124;
     border: 2px solid #DDCAB1;
 }
 
 #event-5 {
-    background-image: url('/events/NLPLMs-event.png');
+    background-image: url('/events/NLPLMsEvent.png');
     background-color: #283457;
     color: white;
     border: 2px solid #030306;
@@ -266,7 +266,7 @@ section .content {
 }
 
 #event-8 {
-    background-image: url('/events/HashCode-event.png');
+    background-image: url('/events/HashCodeEvent.png');
     background-color: #7F035B;
     color: white;
     border: 2px solid #180008;
