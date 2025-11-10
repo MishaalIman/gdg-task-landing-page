@@ -245,7 +245,7 @@ section .content {
 }
 
 #event-5 {
-    background-image: url('/events/NLPLMsEvent.png');
+    background-image: url('events/NLPLMs/NLPLMsEvent.png');
     background-color: #283457;
     color: white;
     border: 2px solid #030306;
@@ -461,3 +461,4 @@ footer {
   transform: scale(1.2);
 
 }
+
