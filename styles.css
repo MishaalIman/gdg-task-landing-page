@@ -252,14 +252,14 @@ section .content {
 }
 
 #event-6 {
-    background-image: url('/events/AISeekhoS2-event.png');
+    background-image: url('/events/AISeekhoS2Event.png');
     background-color: white;
     color: #202124;
     border: 2px solid #0178E6;
 }
 
 #event-7 {
-    background-image: url('/events/AISeekhoS6-event.png');
+    background-image: url('/events/AISeekhoS6Event.png');
     background-color: white;
     color: #202124;
     border: 2px solid #01A454;
@@ -459,4 +459,5 @@ footer {
 .social-links a:hover {
   color: #ffffff;
   transform: scale(1.2);
+
 }
