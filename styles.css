@@ -1,0 +1,462 @@
+body {
+    font-family: 'Google Sans', 'Open Sans', sans-serif;
+    background-color: #E6E6E6;
+    overflow-x: hidden;
+    margin: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 5px;
+    left: 0;
+    width: calc(100% - 8rem);
+    margin: 1rem 2rem;
+    padding: 0.2rem 2rem;
+    /* background-color: #fdfdfd; */
+    backdrop-filter: blur(4px);
+    font-size: 18px;
+    border-radius: 60px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40%;
+}
+
+.sections {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.sections li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sections li a:hover {
+    padding-bottom: 10%;
+}
+
+.about-section:hover {
+    color: #E94335;    
+    border-bottom: 2px solid #E94335;
+}
+
+.team-section:hover {
+    color: #4285F3;    
+    border-bottom: 2px solid #4285F3;
+}
+
+.events-section:hover {
+    color: #34A853;    
+    border-bottom: 2px solid #34A853;
+}
+
+.sponsors-section:hover {
+    color: #F8AA00;    
+    border-bottom: 2px solid #F8AA00;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: url('pngs/dsu.png') no-repeat bottom center / cover;
+}
+
+/* About Section */
+section .heading {
+    font-size: 44px;
+}
+
+section .content {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#about {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+.combo-content {
+    /* display: flex;
+    align-items: center; */
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.content {
+    width: 100%;
+}
+
+#about img {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-right: -100px !important;
+}
+
+/* Events Section */
+#about, #events, #team, #sponsors {
+    padding: 2rem;
+    padding-top: 0.5rem;
+}
+
+#events {
+    background-color: white;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1px;
+}
+
+.toggle-switch {
+    display: inline-flex;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.toggle-btn {
+    padding: 11px 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.events-carousel {
+    display: none !important;
+    overflow-x: auto;
+    /* padding-bottom: 10px; */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.events-carousel.active {
+    display: block !important;
+}
+
+.events-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    /* padding: 5px 15px; */
+    transition: transform 0.5s ease-in-out;
+}
+
+.event-card {
+    position: relative;
+    min-width: 94%;
+    min-height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    /* margin: 5px 5px; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card {
+    background-size: contain;
+    background-position: center-top;
+    background-repeat: no-repeat;
+    /* color: white; */
+    padding: 2rem;
+}
+
+#event-1 {
+    background-image: url('/events/Baithak-event.png');
+    background-color: white;
+    color: #202124;
+    border: 3px solid #F8AA00;
+}
+
+#event-2 {
+    background-image: url('/events/Nextjs+Supabase-event.png');
+    background-color: #212121;
+    color: #f0f0f0;
+    border: 2px solid #C30101;
+}
+
+#event-3 {
+    background-image: url('/events/HackfestxDatathon-event.png');
+    background-color: white;
+    color: #202124;
+    border: 2px solid #2B3097;
+}
+
+#event-4 {
+    background-image: url('/events/BuildwithAI-event.png');
+    background-color: white;
+    color: #202124;
+    border: 2px solid #DDCAB1;
+}
+
+#event-5 {
+    background-image: url('/events/NLPLMs-event.png');
+    background-color: #283457;
+    color: white;
+    border: 2px solid #030306;
+}
+
+#event-6 {
+    background-image: url('/events/AISeekhoS2-event.png');
+    background-color: white;
+    color: #202124;
+    border: 2px solid #0178E6;
+}
+
+#event-7 {
+    background-image: url('/events/AISeekhoS6-event.png');
+    background-color: white;
+    color: #202124;
+    border: 2px solid #01A454;
+}
+
+#event-8 {
+    background-image: url('/events/HashCode-event.png');
+    background-color: #7F035B;
+    color: white;
+    border: 2px solid #180008;
+}
+
+.event-card.past-event {
+    border-top-color: #6c757d;
+}
+
+.event-details {
+    backdrop-filter: blur(4px);
+}
+
+.event-details .type {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.event-details .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.event-details .date,
+.event-details .location {
+    font-size: 1rem;
+    margin: 2px 0;
+    opacity: 0.9;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  border: none;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Team Section */
+#team {
+  text-align: center;
+  background-image: url(pngs/grid-lines.png);
+}
+
+#team .heading  {
+    text-align: left;
+}
+
+/* Grid layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Individual card */
+.team-card {
+  border-radius: 20px;
+  padding: 0;
+  width: 100%;
+  max-width: 260px;
+}
+
+/* Profile photo */
+.team-card img {
+  width: 210px;
+  height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.team-details {
+    backdrop-filter: blur(2px); 
+}
+
+/* Text styling */
+.team-card h3 {
+  font-size: 1.1rem;
+  color: #202124;
+}
+
+.team-card .role {
+    font-size: 0.95rem;
+    color: #5f6368;
+    margin-top: -10px;
+
+}
+
+/* Sponsors Section CSS */
+#sponsors {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    background-image: url(pngs/sponsor-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    margin-bottom: 5%;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    background-color: white;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel-wrapper:hover .logo-container {
+    animation-play-state: paused;
+}
+
+.sponsor-logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);  
+    padding: 0 20px; 
+    height: 150px; 
+}
+
+.sponsor-logo-item img {
+    max-width: 100%;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+@keyframes scroll-logos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px); 
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    font-size: large;
+    color: white;
+    padding: 0 5%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.social-links a {
+  color: #5f6368;
+  font-size: 1.6rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
